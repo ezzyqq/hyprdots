@@ -12,17 +12,6 @@ This is my minimalistic Hyprland dotfiles!
 
 ---
 
-# How to install
-git clone https://github.com/ezzyqq/hyprdots
-
-cd hyprdots
-
-chmod +x install.sh
-
-./install.sh
-
----
-
 # Binds
 Alt+Shift = Switch input language
 
@@ -63,5 +52,19 @@ Super+Up = Focus higher window
 ---
 
 # Issues
+### Installation script
+The installation script works ONLY on Arch Linux
+
 ### Waybar
 If your laptop has a battery, you'll to edit the waybar configuration and uncomment the '"custom/separator", "battery", ' part, just remove the '\*/' and '\/*' part
+
+---
+
+# How to install
+git clone https://github.com/ezzyqq/hyprdots
+
+cd hyprdots
+
+chmod +x install.sh
+
+./INSTALL.sh   # read about Issues of this dotfiles first, then change capital letters to lowercase
