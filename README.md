@@ -67,4 +67,4 @@ cd hyprdots
 
 chmod +x install.sh
 
-./INSTALL.sh   # read about Issues of this dotfiles first, then change capital letters to lowercase
+./install.sh
