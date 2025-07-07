@@ -1,5 +1,5 @@
 # 👋 Welcome!
-This is my minimalistic Hyprland dotfiles!
+This is my clean, minimalistic, dwm-like Hyprland dotfiles!
 Used with `wofi`, `waybar`, `clipman` and `mako`
 
 ---
