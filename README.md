@@ -39,3 +39,23 @@ Super+V = Open Clipboard History menu
 Super+N = Open Notification History menu
 
 Super+T = Open preffered terminal
+
+Super+B = Open preffered browser
+
+Super+Enter = Swap focused window with master/stacked
+
+Super+H = Resize focused window right by 25%
+
+Super+L = Resize focused window left by 25%
+
+Super+J = Resize focused window down by 25%
+
+Super+K = Resize focused window up by 25%
+
+Super+Left = Focus left window
+
+Super+Right = Focus right window
+
+Super+Down = Focus lower window
+
+Super+Up = Focus higher window
