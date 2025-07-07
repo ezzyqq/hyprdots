@@ -13,7 +13,37 @@ if [ "$EUID" -eq 0 ]; then
   exit 1
 fi
 
+
+## PACKAGES INSTALLATION
+# switching sudo to doas
+sudo pacman -S opendoas
+sudo echo "permit :wheel" > /etc/doas.conf
+
+# basic
+echo "Installing basic packages..."
+doas pacman -S alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
+
+# bluetooth
+echo "Installing bluetooth tools..."
+doas pacman -S bluez bluez-utils blueman
+doas  systemctl enable bluetooth
+
+# brightness
+doas pacman -S brightnessctl
+
+# sound
+echo "Installing pipewire..."
+doas pacman -S pulsemixer pipewire pipewire-jack pipewire-pulse
+
+# fonts
+echo "Installing fonts..."
+doas pacman -S noto-fonts noto-fonts-emoji otf-font-awesome
+
+
+## DOTS
 TARGET="$HOME"
 cp -r dots/* $TARGET
 
+
+## FINISH
 echo "Installed successfully!"
