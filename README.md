@@ -4,6 +4,7 @@ This is my minimalistic Hyprland dotfiles!
 ---
 
 # Screenshots
+<img src=screenshots/2.png>
 ![Desktop 1](screenshots/1.png)
 ![Desktop 2](screenshots/2.png)
 
