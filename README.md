@@ -12,7 +12,7 @@ This is my minimalistic Hyprland dotfiles!
 
 ---
 
-# How to install:
+# How to install
 git clone https://github.com/ezzyqq/hyprdots
 
 cd hyprdots
@@ -59,3 +59,9 @@ Super+Right = Focus right window
 Super+Down = Focus lower window
 
 Super+Up = Focus higher window
+
+---
+
+# Issues
+### Waybar
+If your laptop has a battery, you need to edit the waybar configuration and uncomment
