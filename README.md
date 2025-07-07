@@ -64,4 +64,4 @@ Super+Up = Focus higher window
 
 # Issues
 ### Waybar
-If your laptop has a battery, you need to edit the waybar configuration and uncomment
+If your laptop has a battery, you'll to edit the waybar configuration and uncomment the '"custom/separator", "battery", ' part, just remove the '\*/' and '\/*' part
