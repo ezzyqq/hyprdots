@@ -46,7 +46,7 @@ doas pacman -S noto-fonts noto-fonts-emoji otf-font-awesome
 ## DOTS
 TARGET="$HOME"
 echo "Installing dotfiles..."
-cp -r dots/* $TARGET
+cp -rf dots/* $TARGET
 
 
 ## FINISH
