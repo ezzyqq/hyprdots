@@ -15,13 +15,16 @@ fi
 
 
 ## PACKAGES INSTALLATION
-# switching sudo to doas
 sudo pacman -S opendoas
-sudo echo "permit :wheel" > /etc/doas.conf
+
+# doas
+if [ ! -f /etc/doas.conf ]; then
+  sudo echo "permit :wheel" > /etc/doas.conf
+fi
 
 # basic
 echo "Installing basic packages..."
-doas pacman -S alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
+doas pacman -S vim alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
 
 # bluetooth
 echo "Installing bluetooth tools..."
@@ -42,6 +45,7 @@ doas pacman -S noto-fonts noto-fonts-emoji otf-font-awesome
 
 ## DOTS
 TARGET="$HOME"
+echo "Installing dotfiles..."
 cp -r dots/* $TARGET
 
 
