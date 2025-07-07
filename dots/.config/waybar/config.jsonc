@@ -54,6 +54,7 @@
       }
     },
     "pulseaudio": {
+        // "on-click": "alacritty -e pulsemixer"
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -70,7 +71,6 @@
             "car": "",
             "default": ["", "", ""]
         },
-	// "on-click": "alacritty -e pulsemixer"
     },
     "hyprland/language": {
 	"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
