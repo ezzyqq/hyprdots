@@ -15,7 +15,7 @@ fi
 
 
 ## PACKAGES INSTALLATION
-sudo pacman -S opendoas
+sudo pacman -S --noconfirm opendoas
 
 # doas
 if [ ! -f /etc/doas.conf ]; then
