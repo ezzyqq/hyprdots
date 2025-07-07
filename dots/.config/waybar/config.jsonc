@@ -4,7 +4,7 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 28,
     //"width": 1900, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 4,
     // Choose the order of the modules
     "modules-left": ["clock", "custom/separator", "hyprland/workspaces"],
     "modules-center": [],
