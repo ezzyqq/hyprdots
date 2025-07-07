@@ -65,6 +65,6 @@ git clone https://github.com/ezzyqq/hyprdots
 
 cd hyprdots
 
-chmod +x install.sh
+chmod a=rx install.sh
 
 ./install.sh
