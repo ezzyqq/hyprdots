@@ -1,6 +1,7 @@
 # Welcome!
 This is my minimalistic Hyprland dotfiles!
 
+---
 
 # Screenshots
 ![Desktop 1](screenshots/1.png)
@@ -8,6 +9,7 @@ This is my minimalistic Hyprland dotfiles!
 ![Notifications](screenshots/3.png)
 ![Clipboard](screenshots/4.png)
 
+---
 
 # How to install:
 git clone https://github.com/ezzyqq/hyprdots
