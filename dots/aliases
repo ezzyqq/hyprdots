@@ -1,0 +1,7 @@
+alias ls="ls --color=auto"
+alias lsa="ls -a --color=auto"
+alias grep="grep --color=auto"
+alias update="doas pacman -Scc && doas pacman -Syu && flatpak update"
+alias fetch="fastfetch --config examples/21"
+alias linuxwave='f="/mnt/nvme0n1p1/linuxwave-music/linuxwave-$(date "+%Y-%m-%d-%H-%M-%S").wav"; linuxwave -d 45 -o "$f" && mpv "$f"'
+alias pmc="doas pacman"
