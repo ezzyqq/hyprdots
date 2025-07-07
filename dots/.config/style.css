@@ -1,0 +1,28 @@
+#window {
+
+}
+
+#window, #input {
+	font-size: 14px;
+	font-family: otf-font-awesome;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+
+#entry:selected {
+	background-color: white;
+	color: black;
+}
+
+#text:selected {
+	color: black;
+}
+
+#input {
+	border-radius: 0px;
+}
+
+#expander-box {
+	color: white;
+}
