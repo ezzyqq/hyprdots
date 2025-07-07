@@ -1,0 +1,15 @@
+[env]
+TERM = "alacritty"
+
+[general]
+live_config_reload = true
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[font]
+size = 12
+
+[window]
+decorations = "none"
