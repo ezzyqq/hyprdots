@@ -1,0 +1,78 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome;
+    font-size: 14px;
+}
+window#waybar {
+    background-color: #000000;
+    color: #ffffff;
+    /*border-bottom: 2px solid white;*/
+}
+window#waybar.hidden {
+    opacity: 0.2;
+}
+#workspaces button {
+    font-weight: normal;
+    padding: 0 2px;
+    padding-left: 0;
+    background: none;
+    color: white;
+    border: none;
+    transition: none;
+}
+#workspaces button:hover,
+#workspaces button:focus,
+#workspaces button:active {
+    background: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+}
+#clock {
+    color: #fff;
+    padding: 0 2px;
+}
+#cpu,
+#memory,
+#disk,
+#temperature,
+#pulseaudio,
+#tray,
+#power-profiles-daemon,
+#battery {
+    color: #fff;
+    padding: 0 5px
+}
+#battery.charging, #battery.plugged {
+    color: #fff;
+}
+#power-profiles-daemon {
+    padding: 0 5px;
+}
+#power-profiles-daemon.performance {
+    color: #ffffff;
+}
+#power-profiles-daemon.balanced {
+    color: #ffffff;
+}
+#power-profiles-daemon.power-saver {
+    color: #fff;
+}
+#pulseaudio {
+    color: #fff;
+    padding: 0 5px;
+}
+#tray {
+    background-color: transparent;
+    padding: 0 5px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+#language {
+    color: #fff;
+    padding: 0 7px;
+}
