@@ -24,23 +24,23 @@ fi
 
 # basic
 echo "Installing basic packages..."
-doas pacman -S vim alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
+doas pacman -S --noconfirm vim alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
 
 # bluetooth
 echo "Installing bluetooth tools..."
-doas pacman -S bluez bluez-utils blueman
+doas pacman -S --noconfirm bluez bluez-utils blueman
 doas  systemctl enable bluetooth
 
 # brightness
-doas pacman -S brightnessctl
+doas pacman -S --noconfirm brightnessctl
 
 # sound
 echo "Installing pipewire..."
-doas pacman -S pulsemixer pipewire pipewire-jack pipewire-pulse
+doas pacman -S --noconfirm pulsemixer pipewire pipewire-jack pipewire-pulse
 
 # fonts
 echo "Installing fonts..."
-doas pacman -S noto-fonts noto-fonts-emoji otf-font-awesome
+doas pacman -S --noconfirm noto-fonts noto-fonts-emoji otf-font-awesome
 
 
 ## DOTS
