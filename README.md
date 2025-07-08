@@ -57,7 +57,7 @@ Super+Up = Focus higher window
 The installation script works **ONLY on Arch Linux**
 
 ### Waybar
-If your laptop has a battery, you'll to edit the waybar configuration and at `"custom/separator", "battery", `, line just remove the '\*/' and '\/*'
+If your laptop has a battery, you'll to edit the waybar configuration and at `"custom/separator", "battery", `line, remove the '\*/' and '\/*'
 
 ---
 
