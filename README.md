@@ -62,4 +62,4 @@ If your laptop has a battery, you'll to edit the waybar configuration and at `"c
 ---
 
 # ➡️🖥️ How to install
-`git clone https://github.com/ezzyqq/hyprdots && cd hyprdots && chmod a=rx install.sh && ./install.sh`
+`git clone https://github.com/ezzyqq/hyprdots && cd hyprdots && chmod a=rx INSTALL.sh && ./INSTALL.sh`
