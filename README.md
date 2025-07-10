@@ -1,10 +1,10 @@
-# 👋 Welcome!
+### 👋 Welcome!
 This is my clean, minimalistic, dwm-like Hyprland dotfiles!
 Used with `wofi`, `waybar`, `clipman` and `mako`
 
 ---
 
-# 🖼️ Screenshots
+### 🖼️ Screenshots
 ![Desktop 1](screenshots/1.png)
 ![Desktop 2](screenshots/2.png)
 
@@ -13,7 +13,7 @@ Used with `wofi`, `waybar`, `clipman` and `mako`
 
 ---
 
-# ⌨️ Binds
+### ⌨️ Binds
 Alt+Shift = Switch input language
 
 Super+Space = Toggle floating state of focused window
@@ -52,14 +52,14 @@ Super+Up = Focus higher window
 
 ---
 
-# 🚨 Issues
-### Installation script
+### 🚨 Issues
+#### Installation script
 The installation script works **ONLY on Arch-like Distributions (like Artix, EndeavourOS, Manjaro)**
 
-### Waybar
+#### Waybar
 If your laptop has a battery, you'll to edit the waybar configuration and at `"custom/separator", "battery", `line, remove the '\*/' and '\/*'
 
 ---
 
-# ➡️🖥️ How to install
-`git clone https://github.com/ezzyqq/hyprdots && cd hyprdots && chmod a=rx INSTALL.sh && ./INSTALL.sh`
+### ➡️🖥️ How to install
+`curl https://raw.githubusercontent.com/ezzyqq/hyprdots/INSTALL.sh | bash`
