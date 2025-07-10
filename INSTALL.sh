@@ -19,7 +19,14 @@ sudo pacman -S --noconfirm opendoas
 
 # doas
 if [ ! -f /etc/doas.conf ]; then
+  sudo touch /etc/doas.conf
   sudo echo "permit :wheel" > /etc/doas.conf
+fi
+
+read -rp "Do you want to delete base-devel, sudo (DON'T DO THIS IF YOU USE AUR)? (y/N): " confirm
+if [[ "$confirm" =~ ^[Yy]$ ]]; then
+  doas pacman -Rns base-devel
+  doas pacman -S fakeroot gcc make
 fi
 
 # basic
