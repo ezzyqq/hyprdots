@@ -14,6 +14,12 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 
+## DOTS
+TARGET="$HOME"
+echo "Installing dotfiles..."
+cp -rf dots/* $TARGET
+
+
 ## PACKAGES INSTALLATION
 sudo pacman -S --noconfirm opendoas
 
@@ -49,11 +55,6 @@ doas pacman -S --noconfirm pulsemixer pipewire pipewire-jack pipewire-pulse
 echo "Installing fonts..."
 doas pacman -S --noconfirm noto-fonts noto-fonts-emoji otf-font-awesome
 
-
-## DOTS
-TARGET="$HOME"
-echo "Installing dotfiles..."
-cp -rf dots/* $TARGET
 
 
 ## FINISH
