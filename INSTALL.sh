@@ -15,9 +15,8 @@ fi
 
 
 ## DOTS
-TARGET="$HOME"
 echo "Installing dotfiles..."
-cp -f ./dots/* $TARGET
+cp -f $HOME/hyprdots/dots/* $HOME
 
 
 ## PACKAGES INSTALLATION
