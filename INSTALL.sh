@@ -17,7 +17,7 @@ fi
 ## DOTS
 TARGET="$HOME"
 echo "Installing dotfiles..."
-cp -rf dots/* $TARGET
+cp -f dots/* $TARGET
 
 
 ## PACKAGES INSTALLATION
