@@ -16,7 +16,9 @@ fi
 
 ## DOTS
 echo "Installing dotfiles..."
+shopt -s dotglob
 cp -fr $HOME/hyprdots/dots/* $HOME
+shopt -u dotglob
 
 
 ## PACKAGES INSTALLATION
