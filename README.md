@@ -62,4 +62,4 @@ If your laptop has a battery, you'll need to edit the waybar configuration and a
 ---
 
 ### ➡️🖥️ How to install
-`git clone https://github.com/ezzyqq/hyprdots $HOME/hyprdots && cd hyprdots && chmod a=rx INSTALL.sh && ./INSTALL.sh`
+`curl https://raw.githubusercontent.com/ezzyqq/hyprdots/main/INSTALL.sh | bash`
