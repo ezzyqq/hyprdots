@@ -15,6 +15,8 @@ fi
 
 
 ## DOTS
+echo "Downloading dotfiles..."
+git clone https://github.com/ezzyqq/hyprdots $HOME/hyprdots
 echo "Installing dotfiles..."
 shopt -s dotglob
 cp -fr $HOME/hyprdots/dots/* $HOME
