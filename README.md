@@ -57,7 +57,7 @@ Super+Up = Focus higher window
 The installation script works **ONLY on Arch-like Distributions (like Artix, EndeavourOS, Manjaro)**
 
 #### Waybar
-If your laptop has a battery, you'll need to edit the waybar configuration and at `"custom/separator", "battery", `line, remove the '\*/' and '\/*'
+If your laptop has a battery, you'll need to edit the waybar configuration and at `"custom/separator", "battery", ` line, remove the '\*/' and '\/*'
 
 ---
 
