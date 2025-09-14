@@ -32,6 +32,10 @@ if [[ "$confirm" =~ ^[Yy]$ ]]; then
   doas pacman -S fakeroot gcc make
 fi
 
+# sound
+echo "Installing pipewire..."
+doas pacman -S --noconfirm pulsemixer pipewire pipewire-jack pipewire-pulse
+
 # basic
 echo "Installing basic packages..."
 doas pacman -S --noconfirm vim alacritty waybar wofi hyprland xdg-desktop-portal-hyprland xdg-user-dirs power-profiles-daemon cliphist mako libnotify swaybg network-manager-applet playerctl && xdg-user-dirs-update
@@ -39,14 +43,10 @@ doas pacman -S --noconfirm vim alacritty waybar wofi hyprland xdg-desktop-portal
 # bluetooth
 echo "Installing bluetooth tools..."
 doas pacman -S --noconfirm bluez bluez-utils blueman
-doas  systemctl enable bluetooth
+doas systemctl enable bluetooth
 
 # brightness
 doas pacman -S --noconfirm brightnessctl
-
-# sound
-echo "Installing pipewire..."
-doas pacman -S --noconfirm pulsemixer pipewire pipewire-jack pipewire-pulse
 
 # fonts
 echo "Installing fonts..."
